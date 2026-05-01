@@ -1,110 +1,65 @@
 # Bot de Telegram - Mini Asistente
 
-Bot conversacional para Telegram desarrollado en Python como proyecto académico para la asignatura de Inteligencia Artificial 1.
+Bot conversacional para Telegram desarrollado en Python para Inteligencia Artificial 1.
 
-## 📋 Comandos disponibles
+## Integrantes
 
-- `/hola` - Saludo básico del bot
-- `/hora` - Muestra la hora actual del sistema
-- `/contacto` - Información de contacto (correo de contacto)
-- `/proyecto` - Descripción breve del proyecto
+- Yania Eszter Dávid Cadenas - Carnet: 202010175 (25%)
+- Naomi Rashel Yos Cujcuj - Carnet: 202001814 (25%)
+- Daniel Eduardo Velásquez Avila - Carnet: 202200041 (25%)
+- Dominic Juan Pablo Ruano Perez - Carnet: 202200075 (25%)
 
-## 🚀 Requisitos previos
+## Requisitos previos
 
 - Python 3.7 o superior
 - Acceso a internet
 - Token de bot de Telegram (obtenido de BotFather)
 
-## 📦 Instalación
+## Instalación
 
 ### 1. Clonar o descargar el proyecto
 
-```bash
-cd tu_carpeta_del_proyecto
-```
+# Bot de Telegram - Mini Asistente
 
-### 2. Crear un ambiente virtual (recomendado)
+Proyecto académico para la asignatura de Inteligencia Artificial 1. Este repositorio contiene un bot de Telegram simple desarrollado en Python, pensado como un mini asistente para la tarea del curso.
 
-**En Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
+## Descripción del bot
 
-**En macOS/Linux:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
+Bot simple que responde a comandos básicos desde Telegram. Está diseñado para ejecutarse localmente usando polling y carga el token desde un archivo `.env`.
 
-### 3. Instalar dependencias
+
+3. Instala dependencias:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configurar variables de entorno
+4. Configura variables de entorno:
 
-- Copia el archivo `.env.example` y renómbralo a `.env`
-- Obtén tu token de BotFather en Telegram (@BotFather)
-- Reemplaza `YOUR_BOT_TOKEN` en el archivo `.env` con tu token real
+- Copia `.env.example` a `.env` y reemplaza `YOUR_BOT_TOKEN` por el token de BotFather.
 
-**Archivo `.env` (no compartir):**
-```
+```text
 BOT_TOKEN=tu_token_aqui
 ```
 
-## 🎯 Ejecución
+5. Ejecuta el bot:
 
 ```bash
 python bot.py
 ```
 
-El bot mostrará el mensaje: "Bot iniciado. Presiona Ctrl+C para detener."
+El bot iniciará en modo polling y mostrará: "Bot iniciado. Presiona Ctrl+C para detener.".
 
-Para detener el bot: **Ctrl+C**
+## Comandos disponibles
 
-## 📁 Estructura del proyecto
+- `/hola` — Saludo básico del bot.
+![alt text](image.png)
+- `/hora` — Devuelve la hora actual del sistema en formato HH:MM:SS.
+![alt text](image-1.png)
+- `/contacto` — Información de contacto
+![alt text](image-2.png)
+- `/proyecto` — Breve descripción del proyecto.
+![alt text](image-3.png)
 
-```
-.
-├── bot.py              # Archivo principal del bot
-├── .env                # Variables de entorno (no versionado)
-├── .env.example        # Plantilla de .env
-├── requirements.txt    # Dependencias del proyecto
-└── README.md          # Este archivo
-```
-
-## ⚙️ Cómo obtener el TOKEN de Telegram
-
-1. Abre Telegram y busca a **@BotFather**
-2. Envía el comando `/newbot`
-3. Sigue las instrucciones (nombre y nombre de usuario del bot)
-4. Copia el token generado
-5. Pégalo en el archivo `.env`
-
-## 🔒 Consideraciones de seguridad
-
-- **NUNCA** compartas tu archivo `.env` en repositorios públicos
-- El archivo `.env` está incluido en `.gitignore` por defecto
-- Usa `pip freeze > requirements.txt` para actualizar dependencias
-
-## 🛠️ Tecnologías utilizadas
-
-- **Python 3** - Lenguaje principal
-- **requests** - Para comunicación con la API de Telegram
-- **python-dotenv** - Para gestión de variables de entorno
-
-## 📝 Notas
-
-- El bot usa **polling** para recibir actualizaciones (no webhooks)
-- Manejo básico de errores incluido
-- Código modular y comentado para fácil comprensión
-
-## 👥 Autores
-
-Proyecto desarrollado para el curso de Inteligencia Artificial 1.
-
-## 📄 Licencia
-
-Este proyecto es académico y se proporciona como referencia educativa.
+## ENLACE
+[https://t.me/tarea5_g4_bot](https://t.me/tarea5_g4_bot)
